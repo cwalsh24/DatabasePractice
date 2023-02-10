@@ -26,7 +26,7 @@ namespace DatabasePractice
         public MainWindow()
         {
             InitializeComponent();
-            cn = new OleDbConnection("SampleDatabase1ConnectionString");
+            cn = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\\SampleDatabase1.accdb");
         }
         private void AssetButton(object sender, RoutedEventArgs e)
         {
