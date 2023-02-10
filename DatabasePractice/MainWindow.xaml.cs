@@ -57,11 +57,6 @@ namespace DatabasePractice
             //Modify your program so you have a similar button that will display contents of Employees table
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
         private void EmployeeButton_Click(object sender, RoutedEventArgs e)
         {
             string query = "select* from Employees";
