@@ -46,15 +46,12 @@ namespace DatabasePractice
             string data = "";
             while (read.Read())
             {
-                //data += read[0].ToString() + " " + read[1].ToString() + " " + read[2].ToString() + " " + read[3].ToString() + "\n";
                 data += "Employee ID: " + read[0].ToString() + "\n";
                 data += "Asset ID: " + read[1].ToString() + "\n";
                 data += "Asset Description: " + read[2].ToString() + "\n";
                 data += "Asset Name: " + read[3].ToString() + "\n" + "\n"; 
                 MyTextBox.Text = data;
             }
-            //Modify your code so you can display all fields of the Assets table
-            //Modify your program so you have a similar button that will display contents of Employees table
         }
 
         private void EmployeeButton_Click(object sender, RoutedEventArgs e)
