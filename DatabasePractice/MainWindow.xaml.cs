@@ -45,5 +45,10 @@ namespace DatabasePractice
             //Modify your code so you can display all fields of the Assets table
             //Modify your program so you have a similar button that will display contents of Employees table
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
