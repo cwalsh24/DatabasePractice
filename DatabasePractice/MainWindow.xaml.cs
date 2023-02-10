@@ -38,7 +38,7 @@ namespace DatabasePractice
             while (read.Read())
             {
                 data += read[0].ToString() + "\n";
-
+                MyTextBox.Text = data;
             }
 
             //Now display data in the Text attribute of your TextArea.
