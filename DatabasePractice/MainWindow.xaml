@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Button Content="See Assets" HorizontalAlignment="Left" Margin="222,134,0,0" VerticalAlignment="Top" Click="AssetButton"/>
+        <TextBlock HorizontalAlignment="Left" Margin="227,69,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>
