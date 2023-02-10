@@ -1,4 +1,13 @@
-﻿using System;
+﻿/**
+ * @file MainWindow.xaml.cs
+ * @author Connor Walsh
+ * @date 2023-2-10
+ * @brief MainWindow code for the database practice assignment
+ * 
+ * This file contians the implementation for the buttons and textbox for the MainWindow along with its constructor
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Data.OleDb;
 using System.Linq;
