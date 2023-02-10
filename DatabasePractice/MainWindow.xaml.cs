@@ -28,7 +28,7 @@ namespace DatabasePractice
             InitializeComponent();
             cn = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\\SampleDatabase1.accdb");
         }
-        private void AssetButton(object sender, RoutedEventArgs e)
+        private void Asset_Click(object sender, RoutedEventArgs e)
         {
             string query = "select* from Assets";
             OleDbCommand cmd = new OleDbCommand(query, cn);
@@ -37,17 +37,30 @@ namespace DatabasePractice
             string data = "";
             while (read.Read())
             {
-                data += read[0].ToString() + "\n";
+                data += read[0].ToString() + " " + read[1].ToString() + " " + read[2].ToString() + " " + read[3].ToString() + "\n";
                 MyTextBox.Text = data;
             }
-
-            //Now display data in the Text attribute of your TextArea.
             //Modify your code so you can display all fields of the Assets table
             //Modify your program so you have a similar button that will display contents of Employees table
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
+
+        }
+
+        private void EmployeeButton_Click(object sender, RoutedEventArgs e)
+        {
+            string query = "select* from Employees";
+            OleDbCommand cmd = new OleDbCommand(query, cn);
+            cn.Open();
+            OleDbDataReader read = cmd.ExecuteReader();
+            string data = "";
+            while (read.Read())
+            {
+                data += read[0].ToString() + " " + read[1].ToString() + " " + read[2].ToString() + " " + "\n";
+                MyTextBox.Text = data;
+            }
 
         }
     }
