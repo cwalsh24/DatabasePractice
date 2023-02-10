@@ -22,11 +22,11 @@ namespace DatabasePractice
     /// </summary>
     public partial class MainWindow : Window
     {
+        OleDbConnection cn;
         public MainWindow()
         {
-            OleDbConnection cn; 
-            cn = new OleDbConnection("SampleDatabase1ConnectionString");
             InitializeComponent();
+            cn = new OleDbConnection("SampleDatabase1ConnectionString");
         }
         private void AssetButton(object sender, RoutedEventArgs e)
         {
