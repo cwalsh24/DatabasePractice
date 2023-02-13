@@ -52,6 +52,7 @@ namespace DatabasePractice
                 data += "Asset Name: " + read[3].ToString() + "\n" + "\n"; 
                 MyTextBox.Text = data;
             }
+            cn.Close();
         }
 
         private void EmployeeButton_Click(object sender, RoutedEventArgs e)
@@ -68,6 +69,7 @@ namespace DatabasePractice
                 data += "Employee Lastname: " + read[2].ToString() + "\n" + "\n";
                 MyTextBox.Text = data;
             }
+            cn.Close();
 
         }
     }
